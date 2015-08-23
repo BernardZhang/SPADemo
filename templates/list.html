@@ -1,0 +1,29 @@
+<!--<script type="text/template" id="list-page">-->
+
+<div id="nav-btns">
+  <button type="button" class="btn btn-default add">Add</button>
+  <button type="button" class="btn btn-default edit" disabled="disabled">Edit</button>
+  <button type="button" class="btn btn-default delete" disabled="disabled">Delete</button>
+</div>
+
+<div class="table-responsive">
+	<table class="table table-bordered table-hover table-condensed">
+		<thead>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Password</th>
+			<th>Role</th>
+		</thead>
+		<tbody>
+			<%for (var i = 0, len = list.length; i < len; i++) {%>
+			<tr data-id="<%=list[i].id%>">
+				<td><%=list[i].id%></td>
+				<td><%=list[i].name%></td>
+				<td><%=list[i].password%></td>
+				<td><%=list[i].role%></td>
+			</tr>		
+			<%}%>
+		</tbody>
+	</table>
+</div>
+<!--</script>-->
